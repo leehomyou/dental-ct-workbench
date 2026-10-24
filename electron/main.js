@@ -243,7 +243,7 @@ async function runSmokeTest(window) {
             aboutDialogReady = Boolean(
               aboutDialog &&
               /牙科 CT 影像工作台/.test(aboutDialog.textContent || "") &&
-              /版本 2\\.3\\.2/.test(aboutDialog.textContent || "") &&
+              /版本 2\\.3\\.3/.test(aboutDialog.textContent || "") &&
               /未完成医疗器械注册/.test(aboutDialog.textContent || "")
             );
             aboutDialog?.querySelector(".about-close")?.click();

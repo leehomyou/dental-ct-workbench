@@ -1,5 +1,12 @@
 # Release Notes
 
+## 2.3.3
+
+- Publish the source for noncommercial use under PolyForm Noncommercial 1.0.0.
+- Permit noncommercial use, modification, and distribution while prohibiting commercial use.
+- Add the full license text and required first-party copyright notice.
+- Rebuild the Windows x64 portable package from the clean source tree.
+
 ## 2.3.2
 
 - Restore linked crosshair updates when clicking with the hand tool.
@@ -10,8 +17,14 @@
 
 ## Release asset
 
-`DentalCTWorkbench-Portable-2.3.2.exe`
+`DentalCTWorkbench-Portable-2.3.3.exe`
 
 SHA-256:
 
-`5878465C6D24271E0440EB32DE9B43DB5F58599E7CBBFA5BD9C42B148A265C03`
+`6AF604CED6B5442794E8C2F19AE55EC994898A67C177C66193E0105BE7814280`
+
+## License
+
+The project source code is source-available for noncommercial use under
+PolyForm Noncommercial 1.0.0. Commercial use is not permitted. This is not an
+OSI-approved open-source license because it restricts commercial use.

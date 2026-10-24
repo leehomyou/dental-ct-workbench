@@ -1,12 +1,12 @@
 {
   "name": "dental-ct-workbench",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "private": true,
   "type": "module",
   "description": "Offline dental CT and CBCT workbench",
   "main": "electron/main.js",
   "author": "leehomyou",
-  "license": "UNLICENSED",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/leehomyou/dental-ct-workbench.git"

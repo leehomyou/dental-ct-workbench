@@ -3,10 +3,11 @@
 > Product: Dental CT Workbench  
 > Template status: engineering release notice; professional legal review still pending  
 > Audit date: 2026-10-24  
-> Final release version: `2.3.2`  
+> Final release version: `2.3.3`  
 > Repository commit: `[FILL 40-CHARACTER COMMIT SHA]`  
 > Lockfile: `package-lock.json`, lockfileVersion 3, SHA-256 `1515A41E575351886C530ED8000EFFE1B073583DD6F64B5D0E09FE635DF7E6B4`  
 > SBOM: `[ATTACH CycloneDX OR SPDX SBOM AND RECORD SHA-256]`
+> First-party license: PolyForm Noncommercial 1.0.0, Copyright (c) 2026 leehomyou
 
 This file records third-party software used by the product. It is an engineering
 compliance template, not legal advice. The final notice package must be
@@ -261,7 +262,7 @@ successful command does not itself prove legal compliance.
 ## 12. Final Approval Record
 
 ```text
-Release version: 2.3.2 (engineering portable build)
+Release version: 2.3.3 (noncommercial source-available portable build)
 Commit SHA:
 Lockfile SHA-256: 1515A41E575351886C530ED8000EFFE1B073583DD6F64B5D0E09FE635DF7E6B4
 SBOM SHA-256:

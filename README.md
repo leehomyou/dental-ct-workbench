@@ -38,3 +38,7 @@ npm run build:portable
 ## 边界
 
 当前定位为本地影像查看与基础测量工具，使用 Electron、React、Vite、dicom-parser 等开源或开放源码组件。软件尚未完成医疗器械注册和正式临床验证，不应宣称已合规用于正式诊断。第三方许可证和发布前缺口见 `THIRD_PARTY_NOTICES.md` 与 `docs/commercial-readiness.md`。
+
+## 许可证
+
+本项目源代码公开，采用 [PolyForm Noncommercial License 1.0.0](LICENSE)，允许个人、研究、教育、公益和公共机构等非商业用途使用、修改和分发，但不允许商业使用。该许可证属于源码可用（Source Available）许可，不是 OSI 定义下允许任意用途的开源许可证。软件仍不构成医疗器械注册或正式临床诊断结论。
