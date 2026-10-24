@@ -1,0 +1,26 @@
+node_modules/
+dist/
+release/
+outputs/
+*.log
+*.tmp
+*.bak
+.env
+.env.*
+!.env.example
+
+# Medical images and local case data must never be committed.
+*.dcm
+*.dicom
+*.ima
+ct_data/
+ct-library/
+ancillary/
+measurements.json
+
+# Editor and OS metadata.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

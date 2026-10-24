@@ -1,0 +1,77 @@
+{
+  "name": "dental-ct-workbench",
+  "version": "2.3.2",
+  "private": true,
+  "type": "module",
+  "description": "Offline dental CT and CBCT workbench",
+  "main": "electron/main.js",
+  "author": "leehomyou",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leehomyou/dental-ct-workbench.git"
+  },
+  "scripts": {
+    "dev:web": "vite",
+    "build:web": "vite build",
+    "start": "electron .",
+    "test": "node --test tests/*.test.js",
+    "smoke": "electron . --smoke-test",
+    "build:portable": "vite build && electron-builder --win portable --x64",
+    "build:installer": "vite build && electron-builder --win nsis --x64"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "dicom-parser": "^1.8.21"
+  },
+  "devDependencies": {
+    "@kitware/vtk.js": "^37.4.6",
+    "@vitejs/plugin-react": "6.1.2",
+    "electron": "45.0.0",
+    "electron-builder": "26.15.3",
+    "lucide-react": "1.61.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "vite": "8.3.5"
+  },
+  "build": {
+    "appId": "com.dentalct.workbench",
+    "productName": "Dental CT Workbench",
+    "asar": true,
+    "npmRebuild": false,
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "icon": "assets/app_icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "DentalCTWorkbench-Setup-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "DentalCTWorkbench-Portable-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "牙科CT影像工作台",
+      "artifactName": "DentalCTWorkbench-Setup-${version}.${ext}",
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}
